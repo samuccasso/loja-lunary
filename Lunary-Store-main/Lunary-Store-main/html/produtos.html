@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produtos | Lunary</title>
+
+    <link rel="stylesheet" href="../css/produtos.css">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            <img src="../img/logo.png" alt="Lunary">
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="pesquisa" placeholder="O que você procura?" oninput="pesquisarProdutos()">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <div id="resultadoPesquisa"></div>
+        </div>
+
+        <div class="icons">
+            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+            <a href="carrinho.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+
+    </header>
+
+    <!-- MENU -->
+
+    <nav>
+
+        <a href="index.html">Início</a>
+
+        <a href="artesanato.html">Artesanato</a>
+
+        <a href="colecoes.html">Coleções</a>
+
+        <a href="contato.html">Contato</a>
+
+        <a href="promocoes.html">Promoções</a>
+
+    </nav>
+
+    <!-- BANNER -->
+
+    <section class="banner">
+
+        <img src="../img/bannerprodutos.png" alt="Produtos">
+
+    </section>
+
+    <!-- TÍTULO -->
+
+    <section class="titulo-produtos">
+
+        <h2>Nossos Produtos</h2>
+
+        <p>
+            Peças artesanais feitas à mão, inspiradas no estilo boho, cozy e aesthetic.
+        </p>
+
+    </section>
+
+    <!-- PRODUTOS -->
+
+    <section class="produtos">
+
+        <div class="produtos-container">
+            <!-- PRODUTO 1 -->
+
+            <div class="produto-card">
+
+                <img src="../img/cesta.jpg" alt="Cesta Boho">
+
+                <h3>Cesta Boho</h3>
+
+                <p>Cesta artesanal em fibras naturais.</p>
+
+                <span>R$ 79,90</span>
+
+                <button onclick="adicionarCarrinho('Cesta Boho',79.90,'../img/cesta.jpg')">
+                    Adicionar ao Carrinho
+                </button>
+
+            </div>
+
+            <!-- PRODUTO 2 -->
+
+            <div class="produto-card">
+
+                <img src="../img/kitcozy.jpg" alt="Kit Cozy">
+
+                <h3>Kit Cozy</h3>
+
+                <p>Kit decorativo com peças artesanais.</p>
+
+                <span>R$ 149,90</span>
+
+                <button onclick="adicionarCarrinho('Kit Cozy',149.90,'../img/kitcozy.jpg')">
+                    Adicionar ao Carrinho
+                </button>
+
+            </div>
+
+            <!-- PRODUTO 3 -->
+
+            <div class="produto-card">
+
+                <img src="../img/velaaromatica.jpg" alt="Vela Aromática">
+
+                <h3>Vela Aromática</h3>
+
+                <p>Feita com cera vegetal e fragrâncias suaves.</p>
+
+                <span>R$ 39,90</span>
+
+                <button onclick="adicionarCarrinho('Vela Aromática',39.90,'../img/velaaromatica.jpg')">
+                    Adicionar ao Carrinho
+                </button>
+
+            </div>
+
+            <!-- PRODUTO 4 -->
+
+            <div class="produto-card">
+
+                <img src="../img/bolsa.jpg" alt="Bolsa de Crochê">
+
+                <h3>Bolsa de Crochê</h3>
+
+                <p>Bolsa artesanal feita à mão.</p>
+
+                <span>R$ 94,90</span>
+
+                <button onclick="adicionarCarrinho('Bolsa de Crochê',94.90,'../img/bolsa.jpg')">
+                    Adicionar ao Carrinho
+                </button>
+
+            </div>
+
+            <!-- PRODUTO 5 -->
+
+            <div class="produto-card">
+
+                <img src="../img/sabonete_artesanal.jpg" alt="Sabonete Artesanal">
+
+                <h3>Sabonete Artesanal</h3>
+
+                <p>Produzido com ingredientes naturais.</p>
+
+                <span>R$ 39,90</span>
+
+                <button onclick="adicionarCarrinho('Sabonete Artesanal',19.90,'../img/sabonete_artesanal.jpg')">
+                    Adicionar ao Carrinho
+                </button>
+
+            </div>
+
+            <!-- PRODUTO 6 -->
+
+            <div class="produto-card">
+
+                <img src="../img/portavelas.jpg" alt="Porta-Velas">
+
+                <h3>Porta-Velas</h3>
+
+                <p>Peça decorativa artesanal para velas.</p>
+
+                <span>R$ 49,90</span>
+
+                <button onclick="adicionarCarrinho('Porta-Velas',49.90,'../img/portavelas.jpg')">
+                    Adicionar ao Carrinho
+                </button>
+
+            </div>
+
+            <!-- PRODUTO 7 -->
+
+            <div class="produto-card">
+
+                <img src="../img/vaso_decorativo.jpg" alt="Vaso Decorativo">
+
+                <h3>Vaso Decorativo</h3>
+
+                <p>Ideal para decoração boho.</p>
+
+                <span>R$ 69,90</span>
+
+                <button onclick="adicionarCarrinho('Vaso Decorativo',69.90,'../img/vaso_decorativo.jpg')">
+                    Adicionar ao Carrinho
+                </button>
+
+            </div>
+
+            <!-- PRODUTO 8 -->
+
+            <div class="produto-card">
+
+                <img src="../img/kit_presente.jpg" alt="Kit Presente">
+
+                <h3>Kit Presente</h3>
+
+                <p>Uma seleção especial para presentear.</p>
+
+                <span>R$ 169,90</span>
+
+                <button onclick="adicionarCarrinho('Kit Presente',169.90,'../img/kit_presente.jpg')">
+                    Adicionar ao Carrinho
+                </button>
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-col">
+
+                <h3>LUNARY</h3>
+
+                <p>
+                    Artesanato feito com carinho para transformar ambientes
+                    e criar momentos especiais.
+                </p>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>INSTITUCIONAL</h3>
+
+                <a href="index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="colecoes.html">Coleções</a>
+                <a href="contato.html">Contato</a>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>ATENDIMENTO</h3>
+
+                <p>Segunda a Sexta</p>
+                <p>09:00 às 18:00</p>
+                <p>(41) 99999-9999</p>
+                <p>contato@lunary.com</p>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>SIGA A LUNARY</h3>
+
+                <div class="social">
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Lunary • Todos os direitos reservados.
+
+        </div>
+
+    </footer>
+
+    <script src="../js/carrinho.js"></script>
+
+</body>
+
+</html>
