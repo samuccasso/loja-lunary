@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Lunary</title>
+    <link rel="icon" href="../img/logo_lunary.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/carrinho.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo">
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="pesquisa" placeholder="O que você procura?" oninput="pesquisarProdutos()">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <div id="resultadoPesquisa"></div>
+        </div>
+
+        <div class="icons">
+            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+            <a href="../html/carrinho.html" class="icone-carrinho">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                <span id="contadorCarrinho">0</span>
+
+            </a>
+        </div>
+
+    </header>
+
+    <nav>
+
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="artesanato.html">Artesanato</a>
+        <a href="colecoes.html">Coleções</a>
+        <a href="contato.html">Contato</a>
+        <a href="promocoes.html">Promoções</a>
+
+    </nav>
+
+    <section class="carrinho">
+
+        <h2>Meu Carrinho</h2>
+
+        <div class="carrinho-container">
+
+            <div class="lista-produtos">
+
+                <div id="listaCarrinho">
+
+                    <!-- Produtos aparecerão aqui -->
+
+                </div>
+
+            </div>
+
+            <div class="resumo">
+
+                <h3>Resumo da Compra</h3>
+
+                <div class="linha">
+                    <span>Itens</span>
+                    <span id="quantidade">0</span>
+                </div>
+
+                <div class="linha">
+                    <span>Frete</span>
+                    <span>Grátis</span>
+                </div>
+
+                <div class="linha total">
+                    <span>Total</span>
+                    <span id="total">R$ 0,00</span>
+                </div>
+
+                <button class="btn-finalizar">
+                    Finalizar Compra
+                </button>
+
+                <a href="produtos.html" class="continuar">
+                    ← Continuar Comprando
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="toast" class="toast">
+        <i class="fa-solid fa-check"></i>
+        <span>Produto adicionado ao carrinho!</span>
+    </div>
+
+    <script src="../js/carrinho.js"></script>
+
+    <script>
+
+        mostrarCarrinho();
+
+    </script>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-col">
+
+                <h3>LUNARY</h3>
+
+                <p>
+                    Artesanato feito com carinho para transformar ambientes
+                    e criar momentos especiais.
+                </p>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>INSTITUCIONAL</h3>
+
+                <a href="index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="colecoes.html">Coleções</a>
+                <a href="contato.html">Contato</a>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>ATENDIMENTO</h3>
+
+                <p>Segunda a Sexta</p>
+                <p>09:00 às 18:00</p>
+                <p>(41) 99999-9999</p>
+                <p>contato@lunary.com</p>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>SIGA A LUNARY</h3>
+
+                <div class="social">
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Lunary • Todos os direitos reservados.
+
+        </div>
+
+    </footer>
+
+    <script src="../js/carrinho.js"></script>
+    <script src="../js/pesquisa.js"></script>
+
+</body>
+
+</html>
